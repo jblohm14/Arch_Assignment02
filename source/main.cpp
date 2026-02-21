@@ -34,6 +34,7 @@ static void test_1() {
   MathLibrary::pow(2, 3, MathResult1);      // expect 8
   MathLibrary::sqrt(8, MathResult1);        // expect 2
   MathLibrary::factorial(5, MathResult1);   // expect 120
+  std::cout << std::endl;
 }
 
 static void test_2() {
@@ -44,6 +45,7 @@ static void test_2() {
   MathLibrary::pow(2, 3, MathResult2);      // expect 2
   MathLibrary::sqrt(8, MathResult2);        // expect 0
   MathLibrary::factorial(5, MathResult2);   // expect 40
+  std::cout << std::endl;
 }
 
 static void test_floats() {
@@ -54,6 +56,7 @@ static void test_floats() {
   MathLibrary::pow(2.0f, 3.0f, MathResult3);      // expect 8
   MathLibrary::sqrt(16.0f, MathResult3);          // expect 4
   MathLibrary::factorial(5.0f, MathResult3);      // expect 120
+  std::cout << std::endl;
 }
 
 static void test_doubles() {
@@ -64,16 +67,18 @@ static void test_doubles() {
   MathLibrary::pow(2.0, 3.0, MathResult4);      // expect 8
   MathLibrary::sqrt(16.0, MathResult4);         // expect 4
   MathLibrary::factorial(5.0, MathResult4);     // expect 120
+  std::cout << std::endl;
 }
 
 static void test_longs() {
-  MathLibrary::add(10.0L, 20.0L, MathResult4);    // expect 30
-  MathLibrary::multiply(5.0L, 6.0L, MathResult4); // expect 30
-  MathLibrary::divide(5.0L, 6.0L, MathResult4);   // expect 0.833
-  MathLibrary::modulo(5.0L, 6.0L, MathResult4);   // expect 5
-  MathLibrary::pow(2.0L, 3.0L, MathResult4);      // expect 8
-  MathLibrary::sqrt(16.0L, MathResult4);          // expect 4
-  MathLibrary::factorial(5.0L, MathResult4);      // expect 120
+  MathLibrary::add(10.0L, 20.0L, MathResult5);    // expect 30
+  MathLibrary::multiply(5.0L, 6.0L, MathResult5); // expect 30
+  MathLibrary::divide(5.0L, 6.0L, MathResult5);   // expect 0.833
+  MathLibrary::modulo(5.0L, 6.0L, MathResult5);   // expect 5
+  MathLibrary::pow(2.0L, 3.0L, MathResult5);      // expect 8
+  MathLibrary::sqrt(16.0L, MathResult5);          // expect 4
+  MathLibrary::factorial(5.0L, MathResult5);      // expect 120
+  std::cout << std::endl;
 }
 
 int main() {
