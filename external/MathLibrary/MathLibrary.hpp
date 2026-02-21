@@ -2,12 +2,6 @@
 
 #include <iostream>
 
-// define callbacks to return computed results
-typedef void (*int_callback)(int result);
-typedef void (*float_callback)(float result);
-typedef void (*double_callback)(double result);
-typedef void (*long_callback)(long double result);
-
 namespace MathLibrary {
 
 template <typename Type, typename CallBack>
