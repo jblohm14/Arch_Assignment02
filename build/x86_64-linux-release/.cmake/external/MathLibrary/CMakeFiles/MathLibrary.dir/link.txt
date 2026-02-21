@@ -1,1 +1,0 @@
-/usr/bin/g++ -fPIC -O3 -DNDEBUG -shared -Wl,-soname,libMathLibrary.so -o /home/jblohm/uc/software-arch/Arch_Assignment02/build/x86_64-linux-release/lib/libMathLibrary.so CMakeFiles/MathLibrary.dir/MathLibrary.cpp.o
