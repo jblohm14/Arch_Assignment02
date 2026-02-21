@@ -17,10 +17,10 @@
             }
         },
         {
-            "name": "x86_64-linux-release",
+            "name": "x86_64-linux",
             "inherits": "base",
             "cacheVariables": {
-                "CMAKE_BUILD_TYPE": "Release",
+                "CMAKE_BUILD_TYPE": "Debug",
                 "CMAKE_C_COMPILER": "gcc",
                 "CMAKE_CXX_COMPILER": "g++"
             }
@@ -28,11 +28,26 @@
     ],
     "buildPresets": [
         {
-            "name": "x86_64-linux-release",
-            "configurePreset": "x86_64-linux-release",
+            "name": "x86_64-linux",
+            "configurePreset": "x86_64-linux",
             "targets": [
                 "MathLibrary",
                 "MainApp"
+            ]
+        }
+    ],
+    "workflowPresets": [
+        {
+            "name": "assignment2",
+            "steps": [
+                {
+                    "type": "configure",
+                    "name": "x86_64-linux"
+                },
+                {
+                    "type": "build",
+                    "name": "x86_64-linux"
+                }
             ]
         }
     ]
